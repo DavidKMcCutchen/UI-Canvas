@@ -19,7 +19,12 @@
           "apps/dashboard/src/favicon.ico",
           "apps/dashboard/src/assets"
         ],
-        "styles": ["apps/dashboard/src/styles.scss"],
+        "styles": [
+          "apps/dashboard/src/styles.scss",
+          "node_modules/primeicons/primeicons.css",
+          "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+          "node_modules/primeng/resources/primeng.min.css"
+        ],
         "scripts": []
       },
       "configurations": {

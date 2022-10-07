@@ -13,9 +13,16 @@
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "strictPropertyInitialization": false,
+    "noImplicitAny": false,
     "baseUrl": ".",
     "paths": {
-      "@marilias-page/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@marilias-page/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@marilias-page/core-data": ["libs/core-data/src/index.ts"],
+      "@marilias-page/core-state": ["libs/core-state/src/index.ts"],
+      "@marilias-page/material": ["libs/material/src/index.ts"],
+      "@marilias-page/pipes": ["libs/pipes/src/index.ts"],
+      "@marilias-page/ui-login": ["libs/ui-login/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

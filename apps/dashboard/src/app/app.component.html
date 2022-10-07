@@ -1,9 +1,41 @@
-<div style="text-align: center">
-  <h1>Welcome to dashboard!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
-    alt="Nx - Smart, Fast and Extensible Build System"
-  />
+
+<div class="top_navbar">
+    <p-button type="text" (click)="display = true" icon="pi pi-plus" label="Show" position="left"></p-button>
+    
 </div>
-<div>Message: {{ hello$ | async | json }}</div>
+
+<br />
+
+<div class="home_container">
+    
+<ng-container *ngIf="loaded else loading">
+
+    <p-sidebar [(visible)]="display">
+        <div *ngFor="let link of links">
+            <p-button>
+                
+                {{link.title}}
+                
+            </p-button>
+            
+            
+        </div>
+    </p-sidebar>
+
+    
+    
+    
+
+    <h1>Welcome to {{title}}</h1>
+    <br />
+    <div class="welcome_container">
+    <p-card header="Who am I?" [style]="{'width': '25rem', 'margin-bottom': '2em'}">Blah blah blah blah blah.....</p-card>
+    <p-card header="What is this Page for?" [style]="{'width': '25rem', 'margin-bottom': '2em'}">Blah blah blah blah blah.....</p-card>
+    <p-card header="How to Contact Me" [style]="{'width': '25rem', 'margin-bottom': '2em'}">Blah blah blah blah blah.....</p-card>
+</div>
+
+</ng-container>
+<ng-template #loading>
+    <p-progressSpinner [style]="{width: '250px', height: '250px', display: 'grid'}" class="custom_spinner"></p-progressSpinner>
+</ng-template>
+</div>
