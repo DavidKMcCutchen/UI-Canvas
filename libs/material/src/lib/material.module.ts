@@ -31,11 +31,13 @@ import { ToolbarModule } from 'primeng/toolbar';
 import {ProgressSpinnerModule} from 'primeng/progressspinner';
 import {CardModule} from 'primeng/card';
 import {SidebarModule} from 'primeng/sidebar';
+import {DockModule} from 'primeng/dock';
 
 
 @NgModule({
   imports: [
     MatButtonModule,
+    DockModule,
     SidebarModule,
     CardModule,
     ProgressSpinnerModule,
@@ -71,6 +73,7 @@ import {SidebarModule} from 'primeng/sidebar';
   ],
   exports: [
     MatButtonModule,
+    DockModule,
     SidebarModule,
     ProgressSpinnerModule,
     CardModule,

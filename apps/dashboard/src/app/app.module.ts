@@ -8,17 +8,29 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
-import { MaterialModule } from 'libs/material/src';
-
-
-
+import { MaterialModule } from '@marilias-page/material';
+import { DockComponent } from './home/dock/dock.component';
+import { GMapModule } from 'primeng/gmap';
+import { MapComponent } from './home/map/map.component';
 
 @NgModule({
-  declarations: [AppComponent, NxWelcomeComponent, HomeComponent],
-  imports: [BrowserModule, HttpClientModule, BrowserAnimationsModule, AppRoutingModule, RouterModule, MaterialModule],
+  declarations: [
+    AppComponent,
+    NxWelcomeComponent,
+    HomeComponent,
+    DockComponent,
+    MapComponent,
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    RouterModule,
+    MaterialModule,
+    GMapModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
-
-
 export class AppModule {}

@@ -1,0 +1,5 @@
+.p-dock-list-container {
+    display: grid !important;
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+}
