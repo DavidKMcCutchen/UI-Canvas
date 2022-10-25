@@ -22,6 +22,7 @@
       "@marilias-page/core-state": ["libs/core-state/src/index.ts"],
       "@marilias-page/material": ["libs/material/src/index.ts"],
       "@marilias-page/pipes": ["libs/pipes/src/index.ts"],
+      "@marilias-page/prime-ng-modules": ["libs/prime-ng-modules/src/index.ts"],
       "@marilias-page/ui-login": ["libs/ui-login/src/index.ts"]
     }
   },

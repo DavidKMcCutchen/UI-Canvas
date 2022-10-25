@@ -1,0 +1,20 @@
+
+<div class="charts_container">
+<p-card header="Sankey Chart" styleClass="chart_card">
+
+
+        <div class="section-header">IOR to CRI Linkage</div>
+        <canvas id="iorSankey" width="100px" height="100px"></canvas>
+
+
+  </p-card>
+  <p-card header="Line Chart" styleClass="chart_card">
+    <p-chart type="line" [data]="lineData"></p-chart>
+<button type="button" pButton (click)="update($event)"></button>
+  </p-card>
+  <p-card header="Pie Chart" styleClass="chart_card">
+    <p-chart type="pie" [data]="pieData" [options]="chartOptions"  [style]="{'width': '40%'}"></p-chart>
+<button type="button" pButton (click)="update($event)"></button>
+  </p-card>
+</div>
+  

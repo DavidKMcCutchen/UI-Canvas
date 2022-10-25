@@ -1,0 +1,11 @@
+::ng-deep .chart_card {
+  background: whitesmoke;
+  opacity: 0.8;
+}
+
+.charts_container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    background: none;
+    justify-content: center;
+};

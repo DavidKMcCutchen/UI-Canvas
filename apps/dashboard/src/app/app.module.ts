@@ -12,6 +12,9 @@ import { MaterialModule } from '@marilias-page/material';
 import { DockComponent } from './home/dock/dock.component';
 import { GMapModule } from 'primeng/gmap';
 import { MapComponent } from './home/map/map.component';
+import { PrimeNgModulesModule } from '@marilias-page/prime-ng-modules';
+import { ChartsComponent } from './home/charts/charts.component';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +23,7 @@ import { MapComponent } from './home/map/map.component';
     HomeComponent,
     DockComponent,
     MapComponent,
+    ChartsComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +33,7 @@ import { MapComponent } from './home/map/map.component';
     RouterModule,
     MaterialModule,
     GMapModule,
+    PrimeNgModulesModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
